@@ -1,0 +1,126 @@
+/* form regis-login */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+.wrapper {
+  margin: 170px auto;
+  padding: 20px;
+  background:#e0876a;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+
+}
+.wrapper h2 {
+  margin: 0;
+  color: #e0876a;
+  text-align: center;
+  padding: 20px;
+  background: #e0876a;
+  border-radius: 15px;
+  position: relative;
+}
+.wrapper .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+.wrapper .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+.container {
+  border-radius: 7px;
+  padding: 20px 0;
+  border-radius: 12px;
+}
+
+form label {
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 3px;
+
+}
+.login-block {
+  color: #e0876a;
+  text-align: center;
+  padding: 20px;
+  background:#ccc ;
+  border-radius: 15px;
+  position: relative;
+
+}
+.regist-block {
+  color: #e0876a;
+  text-align: center;
+  padding: 20px;
+  background: #ccc;
+  border-radius: 15px;
+  position: relative;
+}
+input[type="text"],
+textarea,
+input[type="password"],
+input[type="number"]{
+  width: 90%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  border-radius: 50px;
+}
+
+input[type="submit"] {
+  background-color:#e0876a;
+  color: #fff;
+  padding: 15px 59px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-style: 15px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+form .policy{
+  display:  flex;
+  align-items: center;
+}
+form h3{
+  color: #707070;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+form .register a:hover{
+  color:  #9eb4b5;
+  text-decoration: none;
+}
+
+form .register a:hover {
+  text-decoration: underline;
+  color: #9eb4b5;
+}
